@@ -11,7 +11,7 @@ const Card = ({ imgSrc, title, subtitle, direction }) => {
     ));
   };
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between rounded-xl bg-slate-700/30 px-6 py-2 md:h-[260px]">
+    <div className={`flex ${direction === "right" ? "flex-col-reverse" : "flex-col"} md:flex-row items-center justify-between rounded-xl bg-slate-700/30 px-6 py-2 md:h-[260px]`}>
       {direction === "right" ? (
         <>
           <div className="flex flex-col gap-3 justify-center text-start">
