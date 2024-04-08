@@ -15,7 +15,7 @@ const Card = ({ imgSrc, title, subtitle, direction }) => {
       {direction === "right" ? (
         <>
           <div className="flex flex-col gap-3 justify-center text-start">
-            <h1 className="text-md sm:text-lg lg:text-2xl font-extrabold">{processTitle(title)}</h1>
+            <h1 className="text-md sm:text-lg lg:text-2xl text-white font-extrabold">{processTitle(title)}</h1>
             <p className="text-xs md:text-sm font-bold text-white">{subtitle}</p>
           </div>
           <img src={imgSrc} alt="Segurança" className="md:w-[40%] w-[250px] rounded-lg md:ml-2 md:object-cover h-[180px] md:h-full object-contain "/>
