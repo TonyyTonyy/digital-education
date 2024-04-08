@@ -11,20 +11,20 @@ const Card = ({ imgSrc, title, subtitle, direction }) => {
     ));
   };
   return (
-    <div className="flex items-center justify-between rounded-xl bg-slate-700/30 px-6 py-2" style={{ height: "240px" }}>
+    <div className="flex flex-col md:flex-row items-center justify-between rounded-xl bg-slate-700/30 px-6 py-2 md:h-[260px]">
       {direction === "right" ? (
         <>
           <div className="flex flex-col gap-3 justify-center text-start">
             <h1 className="text-md sm:text-lg lg:text-2xl font-extrabold">{processTitle(title)}</h1>
             <p className="text-xs md:text-sm font-bold text-white">{subtitle}</p>
           </div>
-          <img src={imgSrc} alt="Segurança" className="w-[40%] rounded-lg ml-2 object-cover" style={{ height: "100%" }} />
+          <img src={imgSrc} alt="Segurança" className="md:w-[40%] w-[250px] rounded-lg md:ml-2 md:object-cover h-[180px] md:h-full object-contain "/>
         </>
       ) : (
         <>
-          <img src={imgSrc} alt="Segurança" className="w-2/4 rounded-lg mr-8 object-cover" style={{ height: "100%" }} />
+          <img src={imgSrc} alt="Segurança" className="md:w-2/4 w-[200px] md:m-0 m-4 rounded-lg md:mr-8 object-fill h-[180px] md:h-full md:object-cover" />
           <div className="flex flex-col gap-3 justify-center text-start">
-            <h1 className="text-md sm:text-lg lg:text-2xl font-extrabold">{processTitle(title)}</h1>
+            <h1 className="text-md sm:text-lg lg:text-2xl font-extrabold text-white">{processTitle(title)}</h1>
             <p className="text-xs md:text-sm font-bold text-white">{subtitle}</p>
           </div>
         </>

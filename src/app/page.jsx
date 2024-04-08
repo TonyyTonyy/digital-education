@@ -43,7 +43,7 @@ export default function Home() {
         <Separator />
       </div>
       <div className="my-[30px]">
-        <footer className="h-20 flex items-center text-white px-6">
+        <footer className="h-20 flex md:flex-row flex-col items-center text-white px-6">
           <img
             src="/unex.png"
             className="md:w-42 md:h-32 md:mx-0 -mx-8 h-24 mr-4 rounded-full"
@@ -51,7 +51,7 @@ export default function Home() {
           />
           <div>
             <p className="text-lg font-semibold mb-2">Desenvolvido Por:</p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mb-8 md:mb-0">
               <a className="text-white font-semibold hover:opacity-70 transition-colors">
                 Gabriel Torres
               </a>
